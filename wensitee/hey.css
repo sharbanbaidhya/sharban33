@@ -1,0 +1,242 @@
+body {
+   margin: 0;
+   font-family: Arial, Helvetica, sans-serif;
+   
+ }
+ 
+ .topnav {
+  
+   background-color: #e9e9e9;
+   transform: translate(0px,-300px);
+   width: 600px;
+   height: 50px;
+   border: 2px solid white ;
+   box-shadow: 0px 0px 30px red;
+    text-shadow: 0px 0px 10px black;
+ }*
+ 
+ .topnav a {
+   float: left;
+   display: block;
+   color: black;
+   text-align: center;
+   padding: 14px 16px;
+   text-decoration: none;
+   font-size: 17px;
+ }
+ 
+ .topnav a:hover {
+   background-color: #ddd;
+   color: black;
+ }
+ 
+ .topnav a.active {
+   background-color: #2196F3;
+   color: white;
+ }
+ 
+ .topnav input[type=text] {
+   float: right;
+   padding: 6px;
+   margin-top: 8px;
+   margin-right: 16px;
+   border: none;
+   font-size: 17px;
+   transform: translate(0px,-45px);
+ }
+
+ 
+ @media screen and (max-width: 600px) {
+   .topnav a, .topnav input[type=text] {
+     float: none;
+     display: block;
+     text-align: left;
+    width: 100%;
+     margin: 0;
+     padding: 14px;
+   }
+   
+   .topnav input[type=text] {
+     border: 1px solid #ccc;  
+   }
+ }
+
+body{
+    background-image: url(hey.jpg);
+    background-size: cover;
+    overflow: scroll;
+}
+div.hey{
+    color: aliceblue;
+    font-size: medium;
+    border-left: 15px solid transparent;
+    border-bottom: 15px solid transparent;
+    border-right: 15px solid red;    
+transform: translate(50px,250px);
+    width: 60px;
+    box-shadow: 0px 0px 30px red;
+    text-shadow: 0px 0px 10px gold;
+    font-family: cursive;
+
+
+}
+nav{
+   overflow:hidden;
+   background-color: black;
+   transform: translate(100px,500px);
+   border: 5px solid aqua ;
+   width: 1000px;
+  height: auto;
+
+}
+nav a{
+   float:left;
+   color: azure;
+   padding-left: 20px;
+   padding-top: 20px;
+   padding-bottom: 20px;
+   font-size: 300%;
+   text-decoration: none;
+
+   
+}
+nav a:hover{
+   background-color:red;
+   color: black;
+}
+div.photo{
+   transform: translate(60px,-250px);
+  
+}
+
+div.good{
+   transform: translate(-700px,-100px);
+  
+   width: 300px;
+   height: 300px;
+   margin: auto;
+   position: relative;
+   
+
+
+}
+div.nice{
+   border: 2px solid blue;
+   width: 110px;
+   height: auto;
+   position: absolute;
+   top: 00px;
+   left: 00px;
+   background-color: red;
+   animation-name: nice;
+   animation-duration: 10s;
+   animation-delay: 2s;
+   animation-iteration-count: infinite;
+   /* animation-fill-mode: forwards;
+   in color
+    */
+    /* animation-direction: alternate; */
+    border-radius: 50%;
+    
+}
+@keyframes nice{
+   0%{
+       top: 0px;
+       left: 0px;
+   }
+25%{
+   top: 0px;
+   left: 400px;
+   background-color: aqua;
+}
+50%{
+   top: 400px;
+   left: 400px;
+   background-color: blue;
+}
+75%{
+   top: 400px;
+   left: 0px;
+   background-color: beige;
+
+}
+100%{
+   top: 0px;
+   left: opx;
+   
+}
+
+
+}
+
+
+div.man{
+    color: aliceblue;
+    font-size: medium;
+   border: 4px solid black;    
+transform: translatey(55px);
+    width: 150px;
+    transform: translate(250px,-300px);
+    box-shadow: 0px 0px 30px red;
+    text-shadow: 0px 0px 10px;
+    font-family: cursive;
+}
+
+
+    body {
+        display:flex;
+        align-items:center;
+        justify-content: center;
+        min-height: 100vh;
+        
+    }
+    #wrapper{
+       display:inline-flex;
+    }
+    .static{
+       color:#fff;
+       font-size:30px;
+    }
+    .dynamic{
+       height:45px;
+       line-height:45px;
+       overflow:hidden;
+       margin:-3.5px -28px;
+    }
+    ul li{
+       position:relative;
+       list-style:none;
+       color:crimson;
+       font-size: 30px;
+       animation:slide 6s steps(4)
+       infinite;
+       top:0;
+       
+    }
+    ul li span{
+       position:relative;
+    }
+    ul li span::after{
+       content:"";
+       position:absolute;
+       width:100%;
+       height: 100%;
+       left:0;
+       border-left: 2px solid crimson;
+       animation:type 1.5s steps(10) infinite;
+       background:#333;
+       top:2%;
+    }
+    @keyframes type{
+       100%{
+          left:100%;
+          margin:0 -35px 0 35px;
+       }
+       
+    }
+    @keyframes slide {
+       100% {
+          top: -180px;
+       }
+    }
+  
